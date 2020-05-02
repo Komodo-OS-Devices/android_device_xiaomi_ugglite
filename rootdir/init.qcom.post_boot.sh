@@ -261,6 +261,9 @@ function 8917_sched_dcvs_hmp()
     echo 1 > /sys/devices/system/cpu/cpufreq/interactive/use_migration_notif
     echo 50000 > /proc/sys/kernel/sched_freq_inc_notify
     echo 50000 > /proc/sys/kernel/sched_freq_dec_notify
+    # cpuset settings
+    echo 0-3 > /dev/cpuset/background/cpus
+    echo 0-3 > /dev/cpuset/system-background/cpus
 }
 
 function 8937_sched_dcvs_hmp()
