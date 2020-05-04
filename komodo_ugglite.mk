@@ -21,7 +21,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/komodo/config/common_full_phone.mk)
+# CURRENT_BUILD_TYPE := nogapps
+TARGET_GAPPS_ARCH :=arm64
+#$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
+KOMODO_OFFICIAL := true
+# TARGET_BOOT_ANIMATION_RES := 720
+
 
 # Inherit from riva device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -30,7 +36,7 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := ugglite
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi Note 5A Lite
-PRODUCT_NAME := lineage_ugglite
+PRODUCT_NAME := komodo_ugglite
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
@@ -41,4 +47,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="ugglite" \
     PRIVATE_BUILD_DESC="ugglite-user 7.1.2 N2G47H V11.0.3.0.NDFMIXM release-keys"
 
-BUILD_FINGERPRINT := "xiaomi/ugglite/ugglite:7.1.2/N2G47H/V11.0.3.0.NDFMIXM:user/release-keys"
+#BUILD_FINGERPRINT := "xiaomi/ugglite/ugglite:7.1.2/N2G47H/V11.0.3.0.NDFMIXM:user/release-keys"
+
+# USING CORAL FP
+BUILD_FINGERPRINT := "google/coral/coral:10/QQ2A.200305.003/6156912:user/release-keys"
