@@ -33,7 +33,7 @@ ifneq ($(filter ugglite,$(TARGET_DEVICE)),)
 $(mk)))
 endif
 
-#include $(CLEAR_VARS)
+# include $(CLEAR_VARS)
 
 # A/B builds require us to create the mount points at compile time.
 # Just creating it for all cases since it does not hurt.
