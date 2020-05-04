@@ -49,5 +49,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 #BUILD_FINGERPRINT := "xiaomi/ugglite/ugglite:7.1.2/N2G47H/V11.0.3.0.NDFMIXM:user/release-keys"
 
-# USING CORAL FP
-BUILD_FINGERPRINT := "google/coral/coral:10/QQ2A.200305.003/6156912:user/release-keys"
+# USING TISSOT FP
+BUILD_FINGERPRINT := 
+"xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:user/release-keys"
