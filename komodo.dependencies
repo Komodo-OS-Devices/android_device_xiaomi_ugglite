@@ -6,7 +6,7 @@
  {
     "remote": "github",
     "repository": "fadlyas07/kernel_xiaomi_ugglite_sd425",
-    "target_path": "kernel/xiaomi/ugglite",
+    "target_path": "kernel/xiaomi/msm8937",
     "branch": "aosp/android-3.18"
 }
 ]
