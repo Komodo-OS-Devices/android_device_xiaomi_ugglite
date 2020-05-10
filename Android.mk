@@ -28,12 +28,9 @@ LOCAL_PATH := $(call my-dir)
 
 ifneq ($(filter ugglite,$(TARGET_DEVICE)),)
 
-  subdir_makefiles=$(call first-makefiles-under,$(LOCAL_PATH))
-  $(foreach mk,$(subdir_makefiles),$(info including $(mk) ...)$(eval include 
-$(mk)))
-endif
+include $(call all-makefiles-under,$(LOCAL_PATH))
 
-#include $(CLEAR_VARS)
+include $(CLEAR_VARS)
 
 # A/B builds require us to create the mount points at compile time.
 # Just creating it for all cases since it does not hurt.
