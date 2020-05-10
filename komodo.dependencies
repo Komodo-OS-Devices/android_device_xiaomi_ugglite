@@ -1,12 +1,22 @@
 [
- {
-   "repository": "android_packages_resources_devicesettings",
-   "target_path": "packages/resources/devicesettings"
-},
- {
+  {
     "remote": "github",
-    "repository": "fadlyas07/kernel_xiaomi_ugglite_sd425",
-    "target_path": "kernel/xiaomi/msm8937",
-    "branch": "aosp/android-3.18"
-}
+    "repository": "fortifying/kernel_xiaomi_msm8917",
+    "target_path": "kernel/xiaomi/msm8917",
+    "branch": "komodo-ten"
+  },
+  {
+    "remote": "github",
+    "repository": "fortifying/android_vendor_xiaomi_ugglite",
+    "target_path": "vendor/xiaomi",
+    "branch": "komodo-ten"
+  },
+  {
+    "remote": "github",
+    "repository": "adislice/android_device_xiaomi_ugglite",
+    "target_path": "device/xiaomi/ugglite",
+    "branch": "lineage-17.1-rebase"
+  }
 ]
+ 
+ 
