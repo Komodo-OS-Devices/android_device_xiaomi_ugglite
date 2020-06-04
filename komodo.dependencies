@@ -1,21 +1,14 @@
 [
   {
     "remote": "github",
-    "repository": "fortifying/kernel_xiaomi_msm8917",
+    "repository": "Komodo-OS-Devices/kernel_xiaomi_ugglite",
     "target_path": "kernel/xiaomi/msm8917",
     "branch": "komodo-ten"
   },
   {
     "remote": "github",
-    "repository": "fortifying/android_vendor_xiaomi_ugglite",
-    "target_path": "vendor/xiaomi",
-    "branch": "komodo-ten"
-  },
-  {
-    "remote": "github",
-    "repository": "adislice/android_device_xiaomi_ugglite",
-    "target_path": "device/xiaomi/ugglite",
-    "branch": "lineage-17.1-rebase"
+    "repository": "Komodo-OS/vendor_xiaomi",
+    "target_path": "vendor/xiaomi"
   }
 ]
  

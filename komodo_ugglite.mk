@@ -20,16 +20,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/komodo/config/common_full_phone.mk)
+# Inherit some common Komodo stuff
+$(call inherit-product, vendor/komodo/config/common.mk)
 # CURRENT_BUILD_TYPE := nogapps
 TARGET_GAPPS_ARCH :=arm64
 #$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
 KOMODO_OFFICIAL := true
-# TARGET_BOOT_ANIMATION_RES := 720
+TARGET_BOOT_ANIMATION_RES := 720
 
 
-# Inherit from riva device
+# Inherit from ugglite device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_BRAND := Xiaomi
