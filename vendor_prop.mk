@@ -56,7 +56,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-    org.komodo.maintainer=HeinzDF
+    org.komodo.maintainer=Heinz Der Flugel
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
