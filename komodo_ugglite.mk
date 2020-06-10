@@ -21,13 +21,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # Inherit some common Komodo stuff
-$(call inherit-product, vendor/komodo/config/common.mk)
-# CURRENT_BUILD_TYPE := nogapps
-TARGET_GAPPS_ARCH :=arm64
-#$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
-KOMODO_OFFICIAL := true
+$(call inherit-product, vendor/komodo/config/common_full_phone.mk)
+TARGET_GAPPS_ARCH := arm64
+
+# Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
 
+#$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
 
 # Inherit from ugglite device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -45,9 +45,10 @@ TARGET_VENDOR_PRODUCT_NAME := ugglite
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="ugglite" \
     PRODUCT_NAME="ugglite" \
-    PRIVATE_BUILD_DESC="ugglite-user 7.1.2 N2G47H V11.0.3.0.NDFMIXM release-keys"
+    PRIVATE_BUILD_DESC="coral-user 10 QQ3A.200605.001 6392402 release-keys"
 
-# BUILD_FINGERPRINT := "xiaomi/ugglite/ugglite:7.1.2/N2G47H/V11.0.3.0.NDFMIXM:user/release-keys"
+# Build fingerprint
+BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys"
 
-# USING Coral FP
-BUILD_FINGERPRINT := "google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys"
+# Official
+KOMODO_OFFICIAL := true
