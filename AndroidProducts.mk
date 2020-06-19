@@ -17,6 +17,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/komodo_ugglite.mk
 
 COMMON_LUNCH_CHOICES := \
-    komodo_ugglite-user
-    komodo_ugglite-userdebug
+    komodo_ugglite-user \
+    komodo_ugglite-userdebug \
     komodo_ugglite-eng
