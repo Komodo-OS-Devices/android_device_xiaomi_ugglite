@@ -104,10 +104,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
 
-# World APN list
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
-
 # Consumerir HIDL
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
