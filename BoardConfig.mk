@@ -170,6 +170,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USES_INTERACTION_BOOST := true
 TARGET_TAP_TO_WAKE_NODE := "/dev/input/event2"
 
+# SurfaceFlinger
+TARGET_USE_AOSP_SURFACEFLINGER := true
+
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
 
